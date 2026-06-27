@@ -1,0 +1,22 @@
+{
+  "name": "playwright_agent_testing",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Amit-Pattanayak/PlayWright_Agent_Testing.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Amit-Pattanayak/PlayWright_Agent_Testing/issues"
+  },
+  "homepage": "https://github.com/Amit-Pattanayak/PlayWright_Agent_Testing#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.61.0",
+    "@types/node": "^26.0.0"
+  }
+}

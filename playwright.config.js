@@ -1,5 +1,12 @@
 // @ts-check
 import { defineConfig, devices } from '@playwright/test';
+import { defineBddConfig } from 'playwright-bdd';
+
+const testDir = defineBddConfig({
+  paths: ['BDD framework/EcomLogin.feature'],
+  require: ['e2e\EcomLogin.js'],
+});
+
 
 /**
  * Read environment variables from file.
@@ -13,7 +20,7 @@ import { defineConfig, devices } from '@playwright/test';
  * @see https://playwright.dev/docs/test-configuration
  */
 export default defineConfig({
-  testDir: './tests',
+  testDir: './e2e',
   /* Run tests in files in parallel */
   fullyParallel: true,
   /* Fail the build on CI if you accidentally left test.only in the source code. */
